@@ -24,3 +24,11 @@ The project analyzes long-term temperature and precipitation trends (1951–2015
 ## Notes
 
 The full PDF version of this report has been submitted on Canvas.
+
+## Required Python Packages
+
+- pandas
+- numpy
+- matplotlib
+- seaborn
+- scikit-learn
