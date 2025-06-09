@@ -20,6 +20,8 @@ The project analyzes long-term temperature and precipitation trends (1951–2015
 - report.md — full project report
 - images/ — all generated graphs
 - data/ — processed climate data (if applicable)
+- Project3.py — data cleaning and plotting script
+
 
 ## Notes
 
