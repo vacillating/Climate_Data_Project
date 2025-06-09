@@ -1,5 +1,10 @@
 import os
 import requests
+import pandas as pd
+import numpy as np
+import matplotlib.pyplot as plt
+import calendar
+from sklearn.linear_model import LinearRegression
 from time import sleep
 
 base_url = "https://www1.ncdc.noaa.gov/pub/data/ghcn/daily/all/"
@@ -42,13 +47,8 @@ for station_id in station_ids:
 print("All downloads completed.")
 
 
-import os
 os.listdir('./ghcn_data')
 
-
-import pandas as pd
-import os
-import calendar
 
 station_mapping = {
     'CHM00050953': 'Harbin',
@@ -114,9 +114,6 @@ filtered_data.to_csv("intermediate_full_daily.csv", index=False)
 
 print("完整 daily 数据已存储为 CSV")
 
-
-import pandas as pd
-
 # 读取 daily-level 数据
 df = pd.read_csv("intermediate_full_daily.csv")
 df['date'] = pd.to_datetime(df['date'])
@@ -157,9 +154,6 @@ annual.to_csv("annual_final.csv", index=False)
 annual.head(120)
 
 
-import pandas as pd
-import matplotlib.pyplot as plt
-
 # 读取最终数据
 df = pd.read_csv("annual_final.csv")
 
@@ -180,8 +174,6 @@ plt.grid(True)
 plt.savefig('./Annual Average Temperature Trends (TAVG).png', dpi=300, bbox_inches='tight')
 plt.show()
 
-# You only need to import this once, and you should do it at the top of your script
-import matplotlib.pyplot as plt
 
 # 先定义你的分组配对
 group_pairs = [
@@ -210,10 +202,6 @@ for china_city, us_city in group_pairs:
     plt.show()
 
 
-import numpy as np
-import matplotlib.pyplot as plt
-from sklearn.linear_model import LinearRegression
-
 slope_results = {}
 
 for city in df['city'].unique():
@@ -236,9 +224,6 @@ plt.grid(True)
 plt.savefig('./Warming Rate Comparison: 1951-2015', dpi=300, bbox_inches='tight')
 plt.show()
 
-
-import numpy as np
-import matplotlib.pyplot as plt
 
 # 仍用之前已经做好的 prcp_decade 数据
 
