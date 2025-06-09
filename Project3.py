@@ -180,7 +180,7 @@ plt.grid(True)
 plt.savefig('./Annual Average Temperature Trends (TAVG).png', dpi=300, bbox_inches='tight')
 plt.show()
 
-
+# You only need to import this once, and you should do it at the top of your script
 import matplotlib.pyplot as plt
 
 # 先定义你的分组配对
