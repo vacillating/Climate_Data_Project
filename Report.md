@@ -1,5 +1,7 @@
 # Climate Change Comparison between China and the United States: A Multi-Region Temperature and Precipitation Analysis (1951–2015)
 
+> GitHub Repository: https://github.com/vacillating/Climate_Data_Project
+
 ## 1. Introduction
 
 Climate change, driven primarily by human-induced greenhouse gas emissions, is widely acknowledged as one of the defining issues of our era. Despite extensive global awareness, regional differences and local variations in climate responses are less thoroughly documented. This research examines the comparative long-term trends in temperature and precipitation across paired cities in China and the United States, carefully matched by latitude and climatic zones. The investigation originates from a personal observation of increased temperatures and frequent extreme weather events in China. Through a systematic data analysis, this study aims to validate these experiences and uncover patterns that might be relevant to climate policy considerations in both countries.
